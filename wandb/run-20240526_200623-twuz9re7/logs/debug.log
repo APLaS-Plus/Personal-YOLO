@@ -1,0 +1,79 @@
+2024-05-26 20:06:23,475 INFO    MainThread:22944 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-05-26 20:06:23,475 INFO    MainThread:22944 [wandb_setup.py:_flush():76] Configure stats pid to 22944
+2024-05-26 20:06:23,475 INFO    MainThread:22944 [wandb_setup.py:_flush():76] Loading settings from C:\Users\lzw20\.config\wandb\settings
+2024-05-26 20:06:23,475 INFO    MainThread:22944 [wandb_setup.py:_flush():76] Loading settings from E:\707\flowers\src\yolov5-6.0\wandb\settings
+2024-05-26 20:06:23,475 INFO    MainThread:22944 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-26 20:06:23,475 INFO    MainThread:22944 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': 'E:\\707\\flowers\\src\\yolov5-6.0\\train.py', 'program': 'E:\\707\\flowers\\src\\yolov5-6.0\\train.py'}
+2024-05-26 20:06:23,475 INFO    MainThread:22944 [wandb_setup.py:_flush():76] Applying login settings: {'login_timeout': 30}
+2024-05-26 20:06:23,475 INFO    MainThread:22944 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-26 20:06:23,475 INFO    MainThread:22944 [wandb_init.py:_log_setup():521] Logging user logs to E:\707\flowers\src\yolov5-6.0\wandb\run-20240526_200623-twuz9re7\logs\debug.log
+2024-05-26 20:06:23,476 INFO    MainThread:22944 [wandb_init.py:_log_setup():522] Logging internal logs to E:\707\flowers\src\yolov5-6.0\wandb\run-20240526_200623-twuz9re7\logs\debug-internal.log
+2024-05-26 20:06:23,476 INFO    MainThread:22944 [wandb_init.py:init():561] calling init triggers
+2024-05-26 20:06:23,476 INFO    MainThread:22944 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s.pt', 'cfg': 'models\\flowers.yaml', 'data': 'data\\flowersdata.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.1, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.3, 'translate': 0.1, 'scale': 0.5, 'shear': 0.1, 'perspective': 0.01, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 200, 'batch_size': 32, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '0', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'workers': 2, 'project': 'runs\\train', 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'patience': 100, 'freeze': 0, 'save_period': -1, 'local_rank': -1, 'entity': None, 'upload_dataset': False, 'bbox_interval': -1, 'artifact_alias': 'latest', 'save_dir': 'runs\\train\\exp38'}
+2024-05-26 20:06:23,476 INFO    MainThread:22944 [wandb_init.py:init():611] starting backend
+2024-05-26 20:06:23,476 INFO    MainThread:22944 [wandb_init.py:init():615] setting up manager
+2024-05-26 20:06:23,477 INFO    MainThread:22944 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-05-26 20:06:23,480 INFO    MainThread:22944 [wandb_init.py:init():623] backend started and connected
+2024-05-26 20:06:23,484 INFO    MainThread:22944 [wandb_init.py:init():715] updated telemetry
+2024-05-26 20:06:23,486 INFO    MainThread:22944 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-05-26 20:07:11,791 INFO    Thread-5  :22944 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\connectionpool.py", line 1096, in _validate_conn
+    conn.connect()
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\connection.py", line 212, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001649A7AF1C0>, 'Connection to api.wandb.ai timed out. (connect timeout=20)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\DL\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "E:\Anaconda3\envs\DL\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001649A7AF1C0>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Anaconda3\envs\DL\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "E:\Anaconda3\envs\DL\lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "E:\Anaconda3\envs\DL\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "E:\Anaconda3\envs\DL\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "E:\Anaconda3\envs\DL\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "E:\Anaconda3\envs\DL\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "E:\Anaconda3\envs\DL\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\Anaconda3\envs\DL\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\Anaconda3\envs\DL\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001649A7AF1C0>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))

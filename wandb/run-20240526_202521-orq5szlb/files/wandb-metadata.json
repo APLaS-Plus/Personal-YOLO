@@ -1,0 +1,47 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.8.19",
+    "heartbeatAt": "2024-05-26T12:25:24.331732",
+    "startedAt": "2024-05-26T12:25:21.654107",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "E:\\707\\flowers\\src\\yolov5-6.0\\train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "\u9ca8\u514bb",
+    "username": "lzw20",
+    "executable": "E:\\Anaconda3\\envs\\DL\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3100.0,
+        "min": 0.0,
+        "max": 3100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3100.0,
+            "min": 0.0,
+            "max": 3100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 803.8684883117676,
+            "used": 588.2640075683594
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.710990905761719
+    }
+}

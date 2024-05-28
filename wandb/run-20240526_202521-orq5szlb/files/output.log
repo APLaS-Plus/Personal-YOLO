@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "E:\707\flowers\src\yolov5-6.0\train.py", line 646, in <module>
+    main(opt)
+  File "E:\707\flowers\src\yolov5-6.0\train.py", line 543, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "E:\707\flowers\src\yolov5-6.0\train.py", line 91, in train
+    loggers = Loggers(save_dir, weights, opt, hyp, LOGGER)  # loggers instance
+  File "E:\707\flowers\src\yolov5-6.0\utils\loggers\__init__.py", line 64, in __init__
+    self.wandb = WandbLogger(self.opt, run_id)
+  File "E:\707\flowers\src\yolov5-6.0\utils\loggers\wandb\wandb_utils.py", line 183, in __init__
+    self.data_dict = check_wandb_dataset(opt.data)
+  File "E:\707\flowers\src\yolov5-6.0\utils\loggers\wandb\wandb_utils.py", line 60, in check_wandb_dataset
+    return check_dataset(data_file)
+  File "E:\707\flowers\src\yolov5-6.0\utils\general.py", line 351, in check_dataset
+    data[k] = str(path / data[k]) if isinstance(data[k], str) else [str(path / x) for x in data[k]]
+TypeError: 'int' object is not iterable
